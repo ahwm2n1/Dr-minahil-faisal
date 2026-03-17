@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ********** PRIMARY META TAGS (UPDATED for Sialkot & SEO) ********** -->
+    <title>Dietitian in Sialkot | Best Nutritionist for PCOS & Weight Loss – Dietitian Sajal</title>
+    <meta name="description" content="Dietitian Sajal is a top clinical nutritionist in Sialkot offering expert diet plans for weight loss, PCOS, and diabetes. Book online or in-person consultation today!">
+    <meta name="keywords" content="Dietitian in Sialkot, Nutritionist in Sialkot, Weight Loss Diet Plan Pakistan, Online Diet Plan Pakistan, PCOS diet expert, clinical nutritionist, diabetes meal plan, holistic wellness coach">
+    <meta name="author" content="Dietitian Sajal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ahwm2n1.github.io/Dn-Sajal/">
+
+    <!-- ********** FAVICON ********** -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- ********** OPEN GRAPH ********** -->
+    <meta property="og:title" content="Dietitian in Sialkot | Best Nutritionist for PCOS & Weight Loss – Dietitian Sajal">
+    <meta property="og:description" content="Expert nutritionist in Sialkot offering personalized diet plans for weight loss, PCOS, diabetes, and holistic wellness. Book your consultation now.">
+    <meta property="og:url" content="https://ahwm2n1.github.io/Dn-Sajal/">
+    <meta property="og:site_name" content="Dietitian Dietitian Sajal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ahwm2n1.github.io/Dn-Sajal/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_PK">
+
+    <!-- ********** TWITTER CARD ********** -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dietitian in Sialkot | Best Nutritionist for PCOS & Weight Loss - Dietitian Sajal">
+    <meta name="twitter:description" content="Expert nutritionist in Sialkot offering personalized diet plans for weight loss, PCOS, diabetes, and holistic wellness.">
+    <meta name="twitter:image" content="https://ahwm2n1.github.io/Dn-Sajal/images/twitter-image.jpg">
+
+    <!-- Fonts, Icons & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (Latest version with high-quality icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ====================== ANIMATED BACKGROUND ====================== -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- ====================== FLOATING ACTION BUTTONS ====================== -->
+    <div class="fab-container">
+        <div class="fab ai-chat-btn" id="aiChatBtn">
+            <i class="fa-solid fa-robot"></i>
+            <span class="fab-tooltip">Ask AI Assistant</span>
+        </div>
+        <div class="fab quick-contact-btn" id="quickContactBtn">
+            <i class="fa-solid fa-headset"></i>
+            <span class="fab-tooltip">Quick Contact</span>
+        </div>
+        <a href="https://wa.me/923263651982" class="fab whatsapp-fab" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="fab-tooltip">WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- ====================== AI CHAT MODAL ====================== -->
+    <div class="ai-modal" id="aiModal">
+        <div class="ai-modal-content">
+            <div class="ai-modal-header">
+                <div class="ai-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="ai-title">
+                    <h3>Nutrition AI Assistant</h3>
+                    <p>Ask me anything about nutrition</p>
+                </div>
+                <button class="ai-close-btn" id="aiCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="ai-chat-body" id="aiChatBody">
+                <div class="ai-message bot-message">
+                    <div class="message-content">
+                        <p>👋 Hello! I'm Dn-Sajal's AI assistant. I can help with PCOS, weight loss plans, booking, or nutrition tips. How can I help you today?</p>
+                    </div>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+            <div class="ai-chat-footer">
+                <input type="text" id="aiUserInput" placeholder="Type your question..." autocomplete="off">
+                <button id="aiSendBtn"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+            <div class="ai-suggestions">
+                <button class="suggestion-chip"><i class="fa-solid fa-female"></i> PCOS diet tips</button>
+                <button class="suggestion-chip"><i class="fa-solid fa-weight-scale"></i> Weight loss plan</button>
+                <button class="suggestion-chip"><i class="fa-solid fa-calendar-check"></i> Book appointment</button>
+                <button class="suggestion-chip"><i class="fa-solid fa-droplet"></i> Diabetes management</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================== QUICK CONTACT MODAL ====================== -->
+    <div class="quick-contact-modal" id="quickContactModal">
+        <div class="quick-contact-content">
+            <div class="quick-contact-header">
+                <h3>Quick Contact</h3>
+                <button class="quick-close-btn" id="quickCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="quick-contact-body">
+                <p>Get in touch instantly through any of these channels:</p>
+                <div class="quick-contact-options">
+                    <a href="https://wa.me/923263651982" class="quick-option whatsapp-option" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="tel:+923263651982" class="quick-option phone-option">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>Call Now</span>
+                    </a>
+                    <a href="mailto:dietitiansajal@gmail.com" class="quick-option email-option">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="#" class="quick-option instagram-option">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram DM</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================== NAVIGATION ====================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo" data-aos="fade-right" data-aos-duration="1000">
+                <a href="index.html">
+                    <span class="logo-text">Dietitian Sajal</span>
+                    <span class="logo-sub">Clinical Nutritionist</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li data-aos="fade-down" data-aos-delay="100"><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li data-aos="fade-down" data-aos-delay="200"><a href="services.html"><i class="fa-solid fa-list-check"></i> Services</a></li>
+                    <li data-aos="fade-down" data-aos-delay="300"><a href="appointment.html"><i class="fa-solid fa-calendar-plus"></i> Appointment</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <a href="#contact" class="nav-contact-btn"><i class="fa-regular fa-message"></i> Contact</a>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====================== HERO SECTION ====================== -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
+                <div class="hero-badge">
+                    <span class="badge-icon"><i class="fa-solid fa-leaf"></i></span>
+                    <span class="badge-text">Certified Clinical Nutritionist in Sialkot</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Best <span class="typed-text" id="typed-text">Dietitian in Sialkot</span>
+                </h1>
+                
+                <p class="hero-description">
+                    <i class="fa-regular fa-star" style="color: #FFD700;"></i> 
+                    Empowering you to transform your health through personalized nutrition plans. 
+                    Specialized in weight management, PCOS, diabetes, and holistic wellness.
+                </p>
+                
+                <div class="hero-btns">
+                    <a href="appointment.html" class="btn btn-primary">
+                        <span>Book Consultation</span>
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </a>
+                    <a href="#certificates" class="btn btn-outline">
+                        <span>View Credentials</span>
+                        <i class="fa-regular fa-certificate"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="statClients"><i class="fa-regular fa-face-smile"></i> 500+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="statSuccess"><i class="fa-solid fa-chart-line"></i> 95%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="statExperience"><i class="fa-regular fa-clock"></i> 8+</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+                <div class="image-wrapper">
+                    <div class="image-glow"></div>
+                    <img src="images/clinet-img.jpg" alt="Dietitian Sajal, Clinical Nutritionist and Dietitian in Sialkot specializing in PCOS and weight loss">
+                    <div class="floating-badge badge-1">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span>MPhil Nutrition</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Clinical Expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ====================== ABOUT SECTION (NEW) ====================== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle"><i class="fa-regular fa-user"></i> About Me</span>
+                <h2 class="section-title">Dedicated to Your Wellness Journey</h2>
+                <p class="section-description">Passionate clinical nutritionist based in Sialkot, helping you achieve sustainable health transformations</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <p>I'm Dietitian Sajal, a certified clinical nutritionist with over 8 years of experience in helping individuals achieve their health goals through personalized nutrition plans. My approach combines evidence-based science with practical lifestyle modifications.</p>
+                    <div class="about-features">
+                        <div class="feature"><i class="fa-solid fa-circle-check"></i> <span>MPhil in Human Nutrition</span></div>
+                        <div class="feature"><i class="fa-solid fa-circle-check"></i> <span>Certified Diabetes Educator</span></div>
+                        <div class="feature"><i class="fa-solid fa-circle-check"></i> <span>PCOS & Gut Health Specialist</span></div>
+                        <div class="feature"><i class="fa-solid fa-circle-check"></i> <span>1000+ Success Stories</span></div>
+                    </div>
+                    <a href="#certificates" class="btn btn-outline"><i class="fa-regular fa-id-card"></i> View Credentials</a>
+                </div>
+                <div class="about-stats-grid" data-aos="fade-left">
+                    <div class="stat-card"><i class="fa-solid-regular fa-clock"></i> <span class="stat-large">8+</span> Years Experience</div>
+                    <div class="stat-card"><i class="fa-regular fa-face-smile"></i> <span class="stat-large">1000+</span> Happy Clients</div>
+                    <div class="stat-card"><i class="fa-regular fa-file-lines"></i> <span class="stat-large">5000+</span> Diet Plans</div>
+                    <div class="stat-card"><i class="fa-regular fa-star"></i> <span class="stat-large">4.9</span> Client Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== CERTIFICATES SECTION ====================== -->
+    <section class="certificates" id="certificates">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle"><i class="fa-regular fa-file-certificate"></i> Qualifications</span>
+                <h2 class="section-title">Education & Certifications</h2>
+                <p class="section-description">Backed by rigorous academic training and clinical experience</p>
+            </div>
+            
+            <div class="certificates-grid" id="certificatesGrid">
+                <div class="certificate-card" data-aos="flip-up" data-aos-duration="1000">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3>BS in Nutrition</h3>
+                    <p>Strong academic foundation in human nutrition and diet planning from recognized institution</p>
+                </div>
+                
+                <div class="certificate-card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h3>MPhil (HND)</h3>
+                    <p>Advanced studies focusing on clinical and therapeutic nutrition with research experience</p>
+                </div>
+                
+                <div class="certificate-card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fa-regular fa-certificate"></i>
+                    </div>
+                    <h3>Certified Clinical Nutritionist</h3>
+                    <p>Professional certification in nutrition counseling and medical nutrition therapy</p>
+                </div>
+                
+                <div class="certificate-card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3>Clinical Experience</h3>
+                    <p>8+ years experience in clinical settings helping clients achieve sustainable results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== BLOG SECTION (4 cards now) ====================== -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle"><i class="fa-regular fa-newspaper"></i> Latest Articles</span>
+                <h2 class="section-title">Health & Nutrition Insights</h2>
+                <p class="section-description">Practical tips and evidence-based information for your wellness journey</p>
+            </div>
+            
+            <div class="blog-grid" id="blogGrid">
+                <article class="blog-card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card-image">
+                        <img src="images/nutrition_image2.jpg" alt="Healthy Eating" loading="lazy">
+                        <div class="card-category"><i class="fa-regular fa-bowl-food"></i> Nutrition</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Healthy Eating for Busy People</h3>
+                        <p>Learn how to maintain a balanced diet even with a busy lifestyle and demanding schedule.</p>
+                        <a href="services.html" class="read-more">Read Article <i class="fa-regular fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="images/nutrition_image2.jpg" alt="PCOS Diet" loading="lazy">
+                        <div class="card-category"><i class="fa-regular fa-female"></i> Women's Health</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>PCOS Diet: What to Eat & Avoid</h3>
+                        <p>A complete guide to managing PCOS through nutrition and lifestyle modifications.</p>
+                        <a href="#" class="read-more">Read Article <i class="fa-regular fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="images/nutrition_image2.jpg" alt="Weight Loss" loading="lazy">
+                        <div class="card-category"><i class="fa-regular fa-weight-scale"></i> Weight Management</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sustainable Weight Loss Tips</h3>
+                        <p>Evidence-based strategies for healthy, sustainable weight loss without extreme dieting.</p>
+                        <a href="#" class="read-more">Read Article <i class="fa-regular fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 4th blog card (NEW) -->
+                <article class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="images/blog-4.jpg" alt="Diabetes Diet" loading="lazy">
+                        <div class="card-category"><i class="fa-regular fa-droplet"></i> Diabetes Care</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Diabetes-Friendly Meal Plan</h3>
+                        <p>Balanced meals that help regulate blood sugar without compromising on taste.</p>
+                        <a href="#" class="read-more">Read Article <i class="fa-regular fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-view-all" data-aos="fade-up">
+                <a href="services.html" class="btn btn-outline"><i class="fa-regular fa-eye"></i> View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== FAQ SECTION ====================== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle"><i class="fa-regular fa-circle-question"></i> Common Questions</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">Find answers to common queries about nutrition counseling</p>
+            </div>
+            
+            <div class="faq-grid" id="faqGrid">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3><i class="fa-regular fa-calendar"></i> How do I book an appointment?</h3>
+                        <span class="faq-toggle"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can book an appointment by visiting our Appointment page, calling directly at +92 326 3651982, or sending a message on WhatsApp. We typically respond within 2-3 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3><i class="fa-regular fa-rupee-sign"></i> What is the consultation fee?</h3>
+                        <span class="faq-toggle"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Initial consultation is PKR 2,500. Follow-up sessions are PKR 1,500. We also offer monthly packages that include weekly check-ins and diet plan adjustments.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3><i class="fa-regular fa-video"></i> Do you offer online consultations?</h3>
+                        <span class="faq-toggle"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer both in-person in Sialkot and online video consultations for clients worldwide. Online sessions are conducted via Zoom or WhatsApp video call.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3><i class="fa-regular fa-hourglass"></i> How long until I see results?</h3>
+                        <span class="faq-toggle"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Results vary depending on individual factors, but most clients notice positive changes within 2-4 weeks. Sustainable transformation typically takes 3-6 months of consistent effort.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3><i class="fa-regular fa-plate-wheat"></i> Do you provide meal plans?</h3>
+                        <span class="faq-toggle"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, personalized meal plans are created based on your health goals, dietary preferences, lifestyle, and any medical conditions. Plans include local food options and recipes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== NEWSLETTER SECTION ====================== -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-wrapper" data-aos="zoom-in">
+                <div class="newsletter-content">
+                    <h3><i class="fa-regular fa-envelope-open-text"></i> Subscribe to Our Newsletter</h3>
+                    <p>Get weekly nutrition tips, healthy recipes, and exclusive offers directly in your inbox.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i> Subscribe</button>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="privacyPolicy" required>
+                        <label for="privacyPolicy"><i class="fa-regular fa-check"></i> I agree to the privacy policy and terms of service</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info" data-aos="fade-right">
+                    <div class="footer-logo">
+                        <span class="logo-text">Dietitian Sajal</span>
+                        <span class="logo-sub">Clinical Nutritionist</span>
+                    </div>
+                    <p><i class="fa-regular fa-location-dot"></i> Based in Sialkot, Pakistan | Online Worldwide</p>
+                    <p>Helping you take control of your health through personalized diet plans designed for weight loss, weight gain, PCOS, diabetes, and overall wellness.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links" data-aos="fade-up">
+                    <h4><i class="fa-regular fa-link"></i> Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-regular fa-house"></i> Home</a></li>
+                        <li><a href="services.html"><i class="fa-regular fa-list"></i> Services</a></li>
+                        <li><a href="appointment.html"><i class="fa-regular fa-calendar"></i> Appointment</a></li>
+                        <li><a href="#blog"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
+                        <li><a href="#faq"><i class="fa-regular fa-question"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fa-regular fa-gear"></i> Services</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-weight-scale"></i> Weight Management</a></li>
+                        <li><a href="#"><i class="fa-regular fa-female"></i> PCOS/PCOD</a></li>
+                        <li><a href="#"><i class="fa-regular fa-droplet"></i> Diabetes Management</a></li>
+                        <li><a href="#"><i class="fa-regular fa-stomach"></i> Gut Health</a></li>
+                        <li><a href="#"><i class="fa-regular fa-baby"></i> Prenatal Nutrition</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact" data-aos="fade-left">
+                    <h4><i class="fa-regular fa-address-card"></i> Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-regular fa-phone"></i> <a href="tel:+923263651982">+92 326 3651982</a></li>
+                        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:dietitiansajal@gmail.com">dietitiansajal@gmail.com</a></li>
+                        <li><i class="fa-regular fa-location-dot"></i> <span>Sialkot, Pakistan (Online Worldwide)</span></li>
+                    </ul>
+                    <div class="footer-hours">
+                        <p><i class="fa-regular fa-clock"></i> Mon-Fri: 9am - 8pm</p>
+                        <p><i class="fa-regular fa-clock"></i> Sat: 10am - 4pm</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dietitian Dietitian Sajal. All Rights Reserved. <i class="fa-regular fa-heart"></i> Based in Sialkot</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy <i class="fa-regular fa-shield"></i></a>
+                    <a href="#">Terms of Service <i class="fa-regular fa-file-signature"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ********** PRIMARY META TAGS (Updated for Dietitian Sajal - Sialkot) ********** -->
+    <title>Book Appointment with Dietitian in Sialkot | Dietitian Sajal - Nutritionist Consultation</title>
+    <meta name="description" content="Book your appointment with Dietitian Sajal, leading dietitian in Sialkot. Online & in-person consultations for weight loss, PCOS, diabetes. Get personalized diet plans today!">
+    <meta name="keywords" content="book appointment dietitian Sialkot, nutritionist consultation Sialkot, dietitian appointment online, PCOS specialist appointment, weight loss consultation, diabetes dietitian Sialkot, Dietitian Sajal">
+    <meta name="author" content="Dietitian Sajal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ahwm2n1.github.io/Dn-Maryam/appointment.html">
+    
+    <!-- ********** FAVICON ********** -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- ********** OPEN GRAPH TAGS (Facebook/LinkedIn) ********** -->
+    <meta property="og:title" content="Book Appointment with Best Dietitian in Sialkot | Dietitian Sajal">
+    <meta property="og:description" content="Schedule your consultation with Dietitian Sajal for personalized diet plans. Specialized in PCOS, weight loss & diabetes management. Book online now!">
+    <meta property="og:url" content="https://ahwm2n1.github.io/Dn-Maryam/appointment.html">
+    <meta property="og:site_name" content="Dietitian Sajal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ahwm2n1.github.io/Dn-Maryam/images/appointment-og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_PK">
+
+    <!-- ********** TWITTER CARD TAGS ********** -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Book Appointment with Dietitian in Sialkot | Dietitian Sajal">
+    <meta name="twitter:description" content="Expert nutritionist consultations in Sialkot. Book your appointment for personalized diet plans and wellness coaching.">
+    <meta name="twitter:image" content="https://ahwm2n1.github.io/Dn-Maryam/images/appointment-twitter-image.jpg">
+
+    <!-- Fonts & Icons (Font Awesome 6) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/appointment.css">
+</head>
+<body>
+    <a href="#appointment" class="skip-to-content">Skip to appointment form</a>
+
+    <!-- ====================== ANIMATED BACKGROUND ====================== -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- ====================== FLOATING ACTION BUTTONS ====================== -->
+    <div class="fab-container">
+        <div class="fab ai-chat-btn" id="aiChatBtn">
+            <i class="fa-solid fa-robot"></i>
+            <span class="fab-tooltip">Ask AI Assistant</span>
+        </div>
+        <div class="fab quick-contact-btn" id="quickContactBtn">
+            <i class="fa-solid fa-headset"></i>
+            <span class="fab-tooltip">Quick Contact</span>
+        </div>
+        <a href="https://wa.me/923263651982" class="fab whatsapp-fab" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="fab-tooltip">WhatsApp</span>
+            <span class="pulse-ring"></span>
+        </a>
+    </div>
+
+    <!-- ====================== AI CHAT MODAL ====================== -->
+    <div class="ai-modal" id="aiModal">
+        <div class="ai-modal-content">
+            <div class="ai-modal-header">
+                <div class="ai-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="ai-title">
+                    <h3>Nutrition AI Assistant</h3>
+                    <p>Ask me anything about nutrition</p>
+                </div>
+                <button class="ai-close-btn" id="aiCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="ai-chat-body" id="aiChatBody">
+                <div class="ai-message bot-message">
+                    <div class="message-content">
+                        <p>👋 Hello! I'm Sajal's AI assistant. I can help you with nutrition questions, diet plans, or booking information. What would you like to know?</p>
+                    </div>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+            <div class="ai-chat-footer">
+                <input type="text" id="aiUserInput" placeholder="Type your question..." autocomplete="off">
+                <button id="aiSendBtn"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+            <div class="ai-suggestions">
+                <button class="suggestion-chip"><i class="fa-solid fa-female"></i> PCOS diet tips</button>
+                <button class="suggestion-chip"><i class="fa-solid fa-weight-scale"></i> Weight loss plan</button>
+                <button class="suggestion-chip"><i class="fa-solid fa-calendar-check"></i> Book appointment</button>
+                <button class="suggestion-chip"><i class="fa-solid fa-droplet"></i> Diabetes management</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================== QUICK CONTACT MODAL (Updated) ====================== -->
+    <div class="quick-contact-modal" id="quickContactModal">
+        <div class="quick-contact-content">
+            <div class="quick-contact-header">
+                <h3>Quick Contact</h3>
+                <button class="quick-close-btn" id="quickCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="quick-contact-body">
+                <p>Get in touch instantly through any of these channels:</p>
+                <div class="quick-contact-options">
+                    <a href="https://wa.me/923263651982" class="quick-option whatsapp-option" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="tel:+923263651982" class="quick-option phone-option">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>Call Now</span>
+                    </a>
+                    <a href="mailto:dietitiansajal@gmail.com" class="quick-option email-option">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.instagram.com/dietitian_sajal" class="quick-option instagram-option" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram DM</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================== NAVIGATION ====================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo" data-aos="fade-right" data-aos-duration="1000">
+                <a href="index.html">
+                    <span class="logo-text">Dietitian Sajal</span>
+                    <span class="logo-sub">Clinical Nutritionist</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li data-aos="fade-down" data-aos-delay="100"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li data-aos="fade-down" data-aos-delay="200"><a href="services.html"><i class="fa-solid fa-list-check"></i> Services</a></li>
+                    <li data-aos="fade-down" data-aos-delay="300"><a href="appointment.html" class="active"><i class="fa-solid fa-calendar-plus"></i> Appointment</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <a href="#contact" class="nav-contact-btn"><i class="fa-regular fa-message"></i> Contact</a>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====================== PAGE HEADER ====================== -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <span class="section-subtitle"><i class="fa-regular fa-calendar-check"></i> Book Your Consultation</span>
+                <h1>Schedule Appointment with Sialkot's Top Dietitian</h1>
+                <p class="header-description">Take the first step towards your health goals. Book a personalized consultation for weight loss, PCOS management, or diabetes care.</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Book Appointment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== APPOINTMENT SECTION ====================== -->
+    <section class="appointment-section" id="appointment">
+        <div class="container">
+            <div class="appointment-wrapper">
+                <!-- Left Column - Appointment Form -->
+                <div class="appointment-form-container" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="form-header">
+                        <span class="form-subtitle"><i class="fa-regular fa-pen-to-square"></i> Book Your Session</span>
+                        <h2>Schedule a Consultation</h2>
+                        <p>Fill out the form below and I'll get back to you within 2-3 hours to confirm your appointment.</p>
+                    </div>
+
+                    <form class="appointment-form" id="appointmentForm" aria-label="Appointment booking form">
+                        <!-- Personal Information -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="required-star">*</span></label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required 
+                                       aria-required="true" autocomplete="name">
+                                <i class="fa-regular fa-user input-icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required-star">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required 
+                                       aria-required="true" autocomplete="email">
+                                <i class="fa-regular fa-envelope input-icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number (WhatsApp) <span class="required-star">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="+92 326 3651982" required 
+                                       aria-required="true" autocomplete="tel">
+                                <i class="fa-solid fa-phone-volume input-icon" aria-hidden="true"></i>
+                                <small class="input-hint">We'll confirm via WhatsApp</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Appointment Details -->
+                        <div class="form-row double">
+                            <div class="form-group">
+                                <label for="appointmentDate">Preferred Date <span class="required-star">*</span></label>
+                                <input type="date" id="appointmentDate" name="appointmentDate" required min="">
+                                <i class="fa-regular fa-calendar input-icon" aria-hidden="true"></i>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="appointmentTime">Preferred Time <span class="required-star">*</span></label>
+                                <select id="appointmentTime" name="appointmentTime" required aria-required="true">
+                                    <option value="" disabled selected>Select time slot</option>
+                                    <option value="09:00 AM">09:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="02:00 PM">02:00 PM</option>
+                                    <option value="03:00 PM">03:00 PM</option>
+                                    <option value="04:00 PM">04:00 PM</option>
+                                    <option value="05:00 PM">05:00 PM</option>
+                                    <option value="06:00 PM">06:00 PM</option>
+                                </select>
+                                <i class="fa-regular fa-clock input-icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Selection -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service">Select Service <span class="required-star">*</span></label>
+                                <select id="service" name="service" required aria-required="true">
+                                    <option value="" disabled selected>Choose a service</option>
+                                    <option value="Weight Management">Weight Management Consultation</option>
+                                    <option value="PCOS/PCOD Management">PCOS/PCOD Management</option>
+                                    <option value="Diabetes Management">Diabetes Management</option>
+                                    <option value="Heart Health">Heart Health</option>
+                                    <option value="Prenatal Nutrition">Prenatal Nutrition</option>
+                                    <option value="Gut Health">Gut Health</option>
+                                    <option value="General Consultation">General Consultation</option>
+                                </select>
+                                <i class="fa-solid fa-stethoscope input-icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Consultation Type -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Consultation Type *</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="consultationType" value="in-person" checked>
+                                        <span class="radio-custom"></span>
+                                        In-Person (Sialkot)
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="consultationType" value="video">
+                                        <span class="radio-custom"></span>
+                                        Video Call (Zoom/WhatsApp)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Notes -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="notes">Additional Notes</label>
+                                <textarea id="notes" name="notes" rows="4" placeholder="Tell me about your health goals, concerns, or any specific requirements..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Terms and Conditions -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <span class="checkbox-custom"></span>
+                                    I agree to the <a href="#">terms and conditions</a> and <a href="#">privacy policy</a> *
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-primary submit-btn" id="submitAppointment">
+                                <span>Book Appointment</span>
+                                <i class="fa-regular fa-calendar-check"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="form-notice">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <p>Your appointment details will be sent via WhatsApp for confirmation. You'll receive a confirmation within 2-3 hours.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Right Column - Contact Info & Details (Updated for Sajal/Sialkot) -->
+                <div class="appointment-info" data-aos="fade-left" data-aos-duration="1000">
+                    <!-- Quick Contact Card -->
+                    <div class="info-card">
+                        <h3><i class="fa-regular fa-address-card"></i> Quick Contact</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span class="info-label">WhatsApp</span>
+                                    <a href="https://wa.me/923263651982" class="info-value">+92 326 3651982</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span class="info-label">Call Us</span>
+                                    <a href="tel:+923263651982" class="info-value">+92 326 3651982</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span class="info-label">Email</span>
+                                    <a href="mailto:dietitiansajal@gmail.com" class="info-value">dietitiansajal@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span class="info-label">Instagram</span>
+                                    <a href="https://www.instagram.com/dietitian_sajal" class="info-value" target="_blank">@dietitian_sajal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Working Hours Card -->
+                    <div class="info-card">
+                        <h3><i class="fa-regular fa-clock"></i> Working Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">9:00 AM - 8:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Saturday</span>
+                                <span class="time">10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Sunday</span>
+                                <span class="time closed">Closed</span>
+                            </div>
+                        </div>
+                        <p class="hours-note">*Online consultations available worldwide</p>
+                    </div>
+                    
+                    <!-- Location Card (Updated to Sialkot) -->
+                    <div class="info-card">
+                        <h3><i class="fa-regular fa-location-dot"></i> Location</h3>
+                        <div class="location-info">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-regular fa-location-dot"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span class="info-label">Address</span>
+                                    <span class="info-value">Sialkot, Pakistan (Online Worldwide)</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Google Map for Sialkot -->
+                            <div class="map-placeholder">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217811.93874298033!2d74.1942511150968!3d31.483196906260815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918f3a9d8b9c9e5%3A0x9e8b3b5c7d8e9f0!2sSialkot%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1709736000000!5m2!1sen!2s" 
+                                    width="100%" 
+                                    height="200" 
+                                    style="border:0; border-radius: 12px;" 
+                                    allowfullscreen="" 
+                                    loading="lazy"
+                                    title="Map showing Sialkot, Pakistan">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Note -->
+                    <div class="emergency-note">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <h4>Need urgent consultation?</h4>
+                            <p>For urgent queries, please WhatsApp or call directly. I typically respond within 30 minutes during working hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== FAQ SECTION ====================== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle"><i class="fa-regular fa-circle-question"></i> Common Questions</span>
+                <h2 class="section-title">Appointment FAQs</h2>
+                <p class="section-description">Find answers to common questions about booking appointments</p>
+            </div>
+            
+            <div class="faq-grid" id="faqGrid">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3><i class="fa-regular fa-calendar-check"></i> How do I confirm my appointment?</h3>
+                        <span class="faq-toggle"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After submitting the form, you'll receive a WhatsApp message from me within 2-3 hours confirming your appointment. Please ensure your WhatsApp number is correct.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3><i class="fa-regular fa-calendar-xmark"></i> What is the cancellation policy?</h3>
+                        <span class="faq-toggle"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can cancel or reschedule up to 24 hours before your appointment without any charge. Late cancellations may incur a 50% fee.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3><i class="fa-regular fa-clipboard"></i> Do I need to prepare anything for the consultation?</h3>
+                        <span class="faq-toggle"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For the first consultation, please have your medical history, current medications (if any), and a 3-day food diary ready. This helps me create a more personalized plan for you.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3><i class="fa-regular fa-hourglass"></i> How long is each consultation?</h3>
+                        <span class="faq-toggle"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Initial consultations are 60 minutes long. Follow-up sessions are 30 minutes. Video consultations are the same duration.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3><i class="fa-regular fa-credit-card"></i> What payment methods do you accept?</h3>
+                        <span class="faq-toggle"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I accept JazzCash, EasyPaisa, bank transfer, and cash for in-person sessions. Online payments can be made via bank transfer or payment links shared on WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== NEWSLETTER SECTION ====================== -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-wrapper" data-aos="zoom-in">
+                <div class="newsletter-content">
+                    <h3><i class="fa-regular fa-envelope-open-text"></i> Subscribe to Our Newsletter</h3>
+                    <p>Get weekly nutrition tips, healthy recipes, and exclusive offers directly in your inbox.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i> Subscribe</button>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="privacyPolicy" required>
+                        <label for="privacyPolicy"><i class="fa-regular fa-check"></i> I agree to the privacy policy and terms of service</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== FOOTER (Updated with Sialkot, Sajal) ====================== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info" data-aos="fade-right">
+                    <div class="footer-logo">
+                        <span class="logo-text">Dietitian Sajal</span>
+                        <span class="logo-sub">Clinical Nutritionist</span>
+                    </div>
+                    <p><i class="fa-regular fa-location-dot"></i> Based in Sialkot, Pakistan | Online Worldwide</p>
+                    <p>Helping you take control of your health through personalized diet plans designed for weight loss, weight gain, PCOS, diabetes, and overall wellness.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/dietitian_sajal" class="social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links" data-aos="fade-up">
+                    <h4><i class="fa-regular fa-link"></i> Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-regular fa-house"></i> Home</a></li>
+                        <li><a href="services.html"><i class="fa-regular fa-list"></i> Services</a></li>
+                        <li><a href="appointment.html"><i class="fa-regular fa-calendar"></i> Appointment</a></li>
+                        <li><a href="index.html#blog"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
+                        <li><a href="#faq"><i class="fa-regular fa-question"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fa-regular fa-gear"></i> Services</h4>
+                    <ul>
+                        <li><a href="services.html"><i class="fa-regular fa-weight-scale"></i> Weight Management</a></li>
+                        <li><a href="services.html"><i class="fa-regular fa-female"></i> PCOS/PCOD</a></li>
+                        <li><a href="services.html"><i class="fa-regular fa-droplet"></i> Diabetes Management</a></li>
+                        <li><a href="services.html"><i class="fa-regular fa-brain"></i> Gut Health</a></li>
+                        <li><a href="services.html"><i class="fa-regular fa-baby"></i> Prenatal Nutrition</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact" data-aos="fade-left">
+                    <h4><i class="fa-regular fa-address-card"></i> Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-regular fa-phone"></i> <a href="tel:+923263651982">+92 326 3651982</a></li>
+                        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:dietitiansajal@gmail.com">dietitiansajal@gmail.com</a></li>
+                        <li><i class="fa-regular fa-location-dot"></i> <span>Sialkot, Pakistan (Online Worldwide)</span></li>
+                    </ul>
+                    <div class="footer-hours">
+                        <p><i class="fa-regular fa-clock"></i> Mon-Fri: 9am - 8pm</p>
+                        <p><i class="fa-regular fa-clock"></i> Sat: 10am - 4pm</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dietitian Sajal. All Rights Reserved. <i class="fa-regular fa-heart"></i> Based in Sialkot</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy <i class="fa-regular fa-shield"></i></a>
+                    <a href="#">Terms of Service <i class="fa-regular fa-file-signature"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/appointment.js"></script>
+</body>
+
+</html>
