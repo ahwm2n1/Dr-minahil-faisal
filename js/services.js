@@ -1,6 +1,6 @@
 // ====================== SERVICES.JS - ADDITIONAL FUNCTIONALITY ======================
 // This file contains specific functionality for services.html
-// Updated for Dietitian Sajal - Sialkot
+// Updated for Dietitian Irfa-Khan - Lahore
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ====================== SERVICES PAGE INITIALIZATION ======================
 function initServicesPage() {
-    console.log('Services page initialized for Dietitian Sajal');
+    console.log('Services page initialized for Dietitian Irfa-Khan');
     
     // Update active nav state
     const navLinks = document.querySelectorAll('.nav-menu a');
@@ -703,19 +703,19 @@ window.deleteService = function(index) {
 // ====================== BOOKING TRACKING ======================
 window.trackServiceBooking = function(serviceName) {
     // Track for analytics
-    console.log(`Service booked: ${serviceName} for Dietitian Sajal`);
+    console.log(`Service booked: ${serviceName} for Dietitian Irfa-Khan`);
     
     // Store in localStorage for retargeting
     localStorage.setItem('lastViewedService', serviceName);
     localStorage.setItem('serviceInterest', new Date().toISOString());
     
     // Show personalized message
-    showNotification(`Great choice! Let's schedule your ${serviceName} consultation with Dietitian Sajal.`, 'success');
+    showNotification(`Great choice! Let's schedule your ${serviceName} consultation with Dietitian Irfa-Khan.`, 'success');
     
     return true;
 };
 
-// ====================== SERVICES PAGE SCHEMA MARKUP (Updated for Sajal/Sialkot) ======================
+// ====================== SERVICES PAGE SCHEMA MARKUP (Updated for Irfa-Khan/Lahore) ======================
 function injectServicesSchema() {
     // Remove any existing schema to avoid duplication
     const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
@@ -742,12 +742,12 @@ function injectServicesSchema() {
             "description": description,
             "provider": {
                 "@type": "Person",
-                "name": "Dietitian Sajal",
+                "name": "Dietitian Irfa-Khan",
                 "credential": "Clinical Nutritionist"
             },
             "areaServed": {
                 "@type": "City",
-                "name": "Sialkot"
+                "name": "Lahore"
             },
             "hasOfferCatalog": {
                 "@type": "OfferCatalog",
@@ -774,14 +774,14 @@ function injectServicesSchema() {
         "@context": "https://schema.org",
         "@type": "MedicalBusiness",
         "@id": "https://ahwm2n1.github.io/Dn-Maryam/services.html",
-        "name": "Dietitian Sajal - Clinical Nutritionist Services in Sialkot",
-        "description": "Professional nutrition and dietetics services in Sialkot specializing in weight management, PCOS, diabetes, and holistic wellness.",
+        "name": "Dietitian Irfa-Khan - Clinical Nutritionist Services in Lahore",
+        "description": "Professional nutrition and dietetics services in Lahore specializing in weight management, PCOS, diabetes, and holistic wellness.",
         "url": "https://ahwm2n1.github.io/Dn-Maryam/services.html",
-        "telephone": "+92 300 1234567",
+        "telephone": "+92 319 3241959",
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Sialkot",
+            "addressLocality": "Lahore",
             "addressRegion": "Punjab",
             "addressCountry": "PK"
         },
@@ -809,7 +809,7 @@ function injectServicesSchema() {
                     "@type": "Person",
                     "name": "Sarah Khan"
                 },
-                "reviewBody": "Sajal's PCOS diet plan changed my life. My periods are regular now, I've lost 12 kg."
+                "reviewBody": "Irfa-Khan's PCOS diet plan changed my life. My periods are regular now, I've lost 12 kg."
             },
             {
                 "@type": "Review",
@@ -822,7 +822,7 @@ function injectServicesSchema() {
                     "@type": "Person",
                     "name": "Ahmed Raza"
                 },
-                "reviewBody": "My HbA1c dropped from 8.5 to 6.2 in just 4 months with Sajal's diabetes management plan."
+                "reviewBody": "My HbA1c dropped from 8.5 to 6.2 in just 4 months with Irfa-Khan's diabetes management plan."
             },
             {
                 "@type": "Review",
