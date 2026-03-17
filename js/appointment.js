@@ -1,6 +1,6 @@
 // ====================== APPOINTMENT.JS - COMPLETE FUNCTIONALITY ======================
 // This file contains specific functionality for appointment.html
-// Updated for Dietitian Sajal - Sialkot
+// Updated for Dietitian Irfa-Khan - Lahore
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ====================== APPOINTMENT PAGE INITIALIZATION ======================
 function initAppointmentPage() {
-    console.log('Appointment page initialized for Dietitian Sajal');
+    console.log('Appointment page initialized for Dietitian Irfa-Khan');
     
     // Update active nav state
     const navLinks = document.querySelectorAll('.nav-menu a');
@@ -135,8 +135,8 @@ function sendToWhatsApp(data) {
     // Encode for URL
     const encodedMessage = encodeURIComponent(message);
     
-    // WhatsApp number (updated for Dietitian Sajal)
-    const whatsappNumber = '923263651982'; // Without + and spaces
+    // WhatsApp number (updated for Dietitian Irfa-Khan)
+    const whatsappNumber = '923193241959'; // Without + and spaces
     
     // Create WhatsApp URL
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -163,10 +163,10 @@ function sendToWhatsApp(data) {
 
 // ====================== FORMAT WHATSAPP MESSAGE ======================
 function formatWhatsAppMessage(data) {
-    const consultationTypeText = data.consultationType === 'in-person' ? 'In-Person (Sialkot)' : 'Video Call (Zoom/WhatsApp)';
+    const consultationTypeText = data.consultationType === 'in-person' ? 'In-Person (Lahore)' : 'Video Call (Zoom/WhatsApp)';
     
     return `
-*NEW APPOINTMENT REQUEST - Dietitian Sajal*
+*NEW APPOINTMENT REQUEST - Dietitian Irfa-Khan*
 ═══════════════════════
 
 *👤 PERSONAL INFORMATION*
@@ -179,7 +179,7 @@ function formatWhatsAppMessage(data) {
 • Time: ${data.time}
 • Service: ${data.service}
 • Type: ${consultationTypeText}
-• Location: Sialkot (for in-person)
+• Location: Lahore (for in-person)
 
 *📝 ADDITIONAL NOTES*
 ${data.notes || 'No additional notes provided'}
@@ -209,7 +209,7 @@ function showThankYouMessage(name) {
                 <i class="fa-regular fa-circle-check"></i>
             </div>
             <h3>Thank You, ${name}!</h3>
-            <p>Your appointment request has been sent successfully to Dietitian Sajal.</p>
+            <p>Your appointment request has been sent successfully to Dietitian Irfa-Khan.</p>
             <p class="thankyou-note">You will receive a confirmation on WhatsApp within 2-3 hours.</p>
             <button class="btn btn-primary thankyou-close">OK</button>
         </div>
@@ -341,7 +341,7 @@ function initDatePicker() {
     // Add available dates hint
     const hint = document.createElement('small');
     hint.className = 'date-hint';
-    hint.textContent = 'Available: Monday - Saturday (Sialkot time)';
+    hint.textContent = 'Available: Monday - Saturday (Lahore time)';
     hint.style.cssText = `
         display: block;
         color: #999;
@@ -700,18 +700,18 @@ function injectAppointmentSchema() {
         }
     });
 
-    // MedicalBusiness + LocalBusiness Schema (Updated for Sajal/Sialkot)
+    // MedicalBusiness + LocalBusiness Schema (Updated for Irfa-Khan/Lahore)
     const appointmentSchema = {
         "@context": "https://schema.org",
         "@type": ["MedicalBusiness", "LocalBusiness"],
-        "name": "Dietitian Sajal - Clinical Nutritionist",
-        "image": "https://ahwm2n1.github.io/Dn-Maryam/images/dietitian-sajal.png",
-        "url": "https://ahwm2n1.github.io/Dn-Maryam/appointment.html",
-        "telephone": "+92 326 3651982",
+        "name": "Dietitian Irfa-Khan - Clinical Nutritionist",
+        "image": "https://ahwm2n1.github.io/Dn-Irfa-Khan/images/dietitian-Irfa-Khan.png",
+        "url": "https://ahwm2n1.github.io/Dn-Irfa-Khan/appointment.html",
+        "telephone": "+92 319 3241959",
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Sialkot",
+            "addressLocality": "Lahore",
             "addressRegion": "Punjab",
             "addressCountry": "PK"
         },
@@ -761,13 +761,13 @@ function injectAppointmentSchema() {
             ]
         },
         "sameAs": [
-            "https://www.instagram.com/dietitian_sajal"
+            "https://www.instagram.com/dietitian_Irfa-Khan"
         ],
         "potentialAction": {
             "@type": "ReserveAction",
             "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://ahwm2n1.github.io/Dn-Maryam/appointment.html",
+                "urlTemplate": "https://ahwm2n1.github.io/Dn-Irfa-Khan/appointment.html",
                 "actionPlatform": [
                     "http://schema.org/DesktopWebPlatform",
                     "http://schema.org/MobileWebPlatform"
