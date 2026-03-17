@@ -90,8 +90,8 @@ function initTypingEffect() {
     const typedText = document.getElementById('typed-text');
     if (!typedText) return;
     
-    // Updated words for Sialkot and better keywords
-    const words = ['Dietitian in Sialkot', 'Nutritionist', 'PCOS Expert', 'Weight Loss Coach'];
+    // Updated words for Lahore and better keywords
+    const words = ['Dietitian in Lahore', 'Nutritionist', 'PCOS Expert', 'Weight Loss Coach'];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -189,24 +189,24 @@ function initAIChat() {
     
     // AI Response database - enhanced with more specific answers
     const aiResponses = {
-        'sialkot': 'Yes, I am based in Sialkot and offer in-person consultations. You can visit my clinic or book an online session. Call +92 326 3651982 for directions.',
+        'Lahore': 'Yes, I am based in Lahore and offer in-person consultations. You can visit my clinic or book an online session. Call +92 319 3241959 for directions.',
         'pcos': 'For PCOS management, I recommend focusing on: 1️⃣ Low glycemic index foods 2️⃣ Anti-inflammatory diet 3️⃣ Regular meal timings 4️⃣ Adequate protein intake. Would you like a detailed PCOS diet plan tailored for you?',
         'weight loss': 'For healthy weight loss, consider: 1️⃣ Calorie deficit of 300-500 kcal 2️⃣ High protein intake 3️⃣ Regular exercise 4️⃣ Adequate sleep. I can create a personalized plan based on your lifestyle!',
         'weight gain': 'For healthy weight gain: 1️⃣ Calorie surplus 2️⃣ Strength training 3️⃣ Frequent meals 4️⃣ Healthy fats like nuts, avocados. Let me know your current weight and target!',
         'diabetes': 'Diabetes management focuses on: 1️⃣ Consistent carb intake 2️⃣ Fiber-rich foods 3️⃣ Regular monitoring 4️⃣ Portion control. Would you like specific meal suggestions for blood sugar control?',
-        'appointment': '📅 You can book an appointment through our Appointment page, call +92 326 3651982, or send a message on WhatsApp. We offer both in-person (Sialkot) and online consultations worldwide.',
+        'appointment': '📅 You can book an appointment through our Appointment page, call +92 319 3241959, or send a message on WhatsApp. We offer both in-person (Lahore) and online consultations worldwide.',
         'cost': '💰 Initial consultation is PKR 2,500. Follow-up sessions are PKR 1,500. Monthly packages start from PKR 5,000 including weekly check-ins and diet plan adjustments.',
         'online': '🌐 Yes! We offer online consultations via Zoom or WhatsApp video call for clients worldwide. Same quality service from the comfort of your home.',
         'meal plan': '🥗 I create personalized meal plans based on your: 1) Health goals 2) Food preferences 3) Lifestyle 4) Medical conditions. Book a consultation to get started!',
         'pcos diet': 'For PCOS, include: Whole grains, lean proteins, leafy greens, berries, nuts, seeds. Avoid: Sugary foods, processed carbs, dairy (for some).',
         'detox': '🌿 I don\'t recommend extreme detox diets. Instead, focus on whole foods, adequate water, and removing processed foods for natural body cleansing.',
-        'hello': '👋 Hello! I\'m Maryam\'s AI assistant. How can I help you with your nutrition questions today?',
+        'hello': '👋 Hello! I\'m Irfa-Khan\'s AI assistant. How can I help you with your nutrition questions today?',
         'hi': '👋 Hi there! Great to hear from you. What nutrition topic would you like to discuss? (PCOS, weight loss, diabetes, etc.)',
         'thank': '😊 You\'re welcome! Feel free to ask if you have more questions.',
         'thanks': '😊 You\'re welcome! Feel free to ask if you have more questions.',
-        'location': '📍 I am located in Sialkot, Pakistan. I offer both in-person and online consultations.',
-        'sialkot': '📍 Yes, I practice in Sialkot. You can book an in-person appointment or online consultation.',
-        'contact': '📞 You can reach me at +92 326 3651982, email dnmaryamshahrukh@gmail.com, or via WhatsApp.',
+        'location': '📍 I am located in Lahore, Pakistan. I offer both in-person and online consultations.',
+        'Lahore': '📍 Yes, I practice in Lahore. You can book an in-person appointment or online consultation.',
+        'contact': '📞 You can reach me at +92 319 3241959, email dnIrfa-Khanshahrukh@gmail.com, or via WhatsApp.',
         'hours': '⏰ Working hours: Mon-Fri 9am-8pm, Sat 10am-4pm. Closed on Sundays.'
     };
     
@@ -295,7 +295,7 @@ function initAIChat() {
         }
         
         // Default response
-        return "🤔 I understand you're asking about nutrition. Could you please be more specific? You can ask about PCOS, weight loss, diabetes, meal plans, appointments, costs, or location (Sialkot). I'm here to help! 😊";
+        return "🤔 I understand you're asking about nutrition. Could you please be more specific? You can ask about PCOS, weight loss, diabetes, meal plans, appointments, costs, or location (Lahore). I'm here to help! 😊";
     }
     
     // Event listeners
@@ -753,7 +753,7 @@ window.handleAppointmentSubmit = function(formData) {
 %0A*Submitted:* ${new Date().toLocaleString()}`;
     
     // Open WhatsApp with formatted message
-    window.open(`https://wa.me/923263651982?text=${message}`, '_blank');
+    window.open(`https://wa.me/923193241959?text=${message}`, '_blank');
     
     showNotification('Redirecting to WhatsApp...', 'success');
 };
@@ -771,25 +771,25 @@ function injectSchemaMarkup() {
         }
     });
 
-    // LocalBusiness Schema (updated for Sialkot)
+    // LocalBusiness Schema (updated for Lahore)
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Dietitian Maryam Shahrukh",
-        "image": "https://ahwm2n1.github.io/Dn-Maryam/images/dietitian-maryam.png",
-        "@id": "https://ahwm2n1.github.io/Dn-Maryam",
-        "url": "https://ahwm2n1.github.io/Dn-Maryam/",
-        "telephone": "+92 326 3651982",
+        "name": "Dietitian Irfa-Khan Shahrukh",
+        "image": "https://ahwm2n1.github.io/Irfa-Khan/images/dietitian-Irfa-Khan.png",
+        "@id": "https://ahwm2n1.github.io/Irfa-Khan",
+        "url": "https://ahwm2n1.github.io/Irfa-Khan/",
+        "telephone": "+92 319 3241959",
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Sialkot",
+            "addressLocality": "Lahore",
             "addressRegion": "Punjab",
             "addressCountry": "PK"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 32.4945, // Approx for Sialkot
+            "latitude": 32.4945, // Approx for Lahore
             "longitude": 74.5229
         },
         "openingHoursSpecification": [
@@ -807,12 +807,12 @@ function injectSchemaMarkup() {
             }
         ],
         "sameAs": [
-            "https://www.instagram.com/dietitian_sajal", // Updated to provided Instagram
+            "https://www.instagram.com/dietitian_Ifra Khan", // Updated to provided Instagram
             "https://www.facebook.com/yourprofile/" // Add actual FB if available
         ],
         "areaServed": {
             "@type": "City",
-            "name": "Sialkot"
+            "name": "Lahore"
         },
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
