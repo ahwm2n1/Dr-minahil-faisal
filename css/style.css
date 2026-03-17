@@ -1090,8 +1090,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     line-height: 1.2;
 }
-
-/* ====================== CERTIFICATES SECTION ====================== */
+/* ====================== CERTIFICATES SECTION WITH IMAGES ====================== */
 .certificates {
     padding: 6rem 0;
 }
@@ -1100,67 +1099,143 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    margin-top: 3rem;
 }
 
 .certificate-card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 2rem;
-    border-radius: var(--radius-lg);
+    border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: var(--transition-normal);
-    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
     position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: 0 20px 40px rgba(193, 123, 76, 0.15);
+}
+
+/* Certificate Image */
+.certificate-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
     overflow: hidden;
 }
 
-.certificate-card::before {
-    content: '';
+.certificate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.certificate-card:hover .certificate-img {
+    transform: scale(1.1);
+}
+
+/* Overlay on Image */
+.certificate-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transform: translateX(-100%);
-    transition: var(--transition-slow);
-}
-
-.certificate-card:hover::before {
-    transform: translateX(100%);
-}
-
-.certificate-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--primary);
-}
-
-.card-icon {
-    width: 70px;
-    height: 70px;
-    border-radius: var(--radius-full);
-    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.card-icon i {
-    font-size: 2rem;
+.certificate-overlay i {
+    font-size: 2.5rem;
+    color: white;
+    background: var(--primary);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.certificate-card:hover .certificate-overlay {
+    opacity: 1;
+}
+
+/* Certificate Content */
+.certificate-content {
+    padding: 2rem 1.5rem 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+/* Icon that overlaps image and content */
+.certificate-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.certificate-icon i {
+    font-size: 1.5rem;
     color: white;
 }
 
-.certificate-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+.certificate-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
 }
 
-.certificate-card p {
-    color: var(--dark-light);
+.certificate-content p {
     font-size: 0.9rem;
-    line-height: 1.6;
+    color: var(--dark-light);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .certificates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .certificate-img-wrapper {
+        height: 180px;
+    }
 }
 
 /* ====================== BLOG SECTION ====================== */
